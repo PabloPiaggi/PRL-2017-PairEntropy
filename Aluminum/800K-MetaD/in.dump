@@ -1,0 +1,4 @@
+dump            myDump all atom ${out_freq2} dump.${p_id}
+dump            myDump2 all dcd ${out_freq2} dump.${p_id}.dcd
+dump_modify	myDump append yes
+dump_modify	myDump2 append yes

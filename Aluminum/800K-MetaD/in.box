@@ -1,0 +1,9 @@
+variable	side equal 18.0
+variable	numAtoms equal 256
+variable 	mass equal 26.981539
+region          box block 0 ${side} 0 ${side} 0 ${side}
+create_box      1 box
+create_atoms    1 random ${numAtoms} ${seed} box
+mass            1 ${mass}
+change_box	all triclinic
+
