@@ -96,7 +96,6 @@ public:
   explicit PairEntropy(const ActionOptions&);
   ~PairEntropy();
   virtual void calculate();
-  virtual void prepare();
   static void registerKeywords( Keywords& keys );
 };
 
