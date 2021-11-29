@@ -21,6 +21,7 @@
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 #include "colvar/Colvar.h"
 #include "core/ActionRegister.h"
+#include "core/PlumedMain.h"
 #include "tools/Communicator.h"
 #include "tools/Tools.h"
 #include "tools/IFile.h"
