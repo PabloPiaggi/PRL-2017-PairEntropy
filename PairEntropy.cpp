@@ -123,6 +123,9 @@ PLUMED_COLVAR_INIT(ao),
 pbc(true),
 serial(false)
 {
+  log.printf("  Please read and cite ");
+  log << plumed.cite("Piaggi, Valsson, and Parrinello, Phys. Rev. Lett. 119, 015701 (2017)");
+  log.printf("\n");
 
   parseFlag("SERIAL",serial);
 
@@ -141,8 +144,8 @@ serial(false)
   log.printf("  Integration in the interval from 0. to %f \n", maxr );
   parse("SIGMA",sigma);
   log.printf("  The pair distribution function is calculated with a Gaussian kernel with deviation %f \n", sigma);
-  double rcut = maxr + 3*sigma;
-  rcut2 = (maxr + 3*sigma)*(maxr + 3*sigma);  // 3*sigma is hard coded
+  double rcut = maxr + 3*sigma;  // 3*sigma is hard coded
+  rcut2 = rcut*rcut;
   nhist=ceil(maxr/sigma) + 1; // Default value
   parse("NHIST",nhist);
   log.printf("  The interval is partitioned in %u equal parts and the integration is performed with the trapezoid rule. \n", nhist );
