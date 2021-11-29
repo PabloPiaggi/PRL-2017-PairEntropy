@@ -1,6 +1,6 @@
 RESTART
 
-LOAD FILE=PairEntropy.cpp
+LOAD FILE=../../PairEntropy.cpp
 
 PAIRENTROPY ...
  LABEL=s2
