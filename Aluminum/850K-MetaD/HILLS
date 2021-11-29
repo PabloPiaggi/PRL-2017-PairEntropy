@@ -1,0 +1,4 @@
+#! FIELDS time enthalpyPerAtom s2 sigma_enthalpyPerAtom sigma_s2 height biasf
+#! SET multivariate false
+#! SET kerneltype gaussian
+                      1     -301.2642858286724     -2.482539989392145                    0.3                    0.1      7.758620689655173                     30
